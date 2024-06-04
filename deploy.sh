@@ -7,7 +7,7 @@
 git --version | tee -a ${LOG_FILE}
 
 git clone https://github.com/Yuhao-Fan/DockerManagementFlask.git
-ls
+ls -l
 cd $FLASK_APP_WS
 git fetch --all
 # git checkout -b $DEMO_NAME origin/$DEMO_NAME
