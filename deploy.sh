@@ -1,15 +1,15 @@
 #!/bin/bash
 
-LOG_FILE=${PROJ_WS}/start.log
+# LOG_FILE=${PROJ_WS}/start.log
 
-cd $PROJ_WS
+# cd $PROJ_WS
 
 git --version | tee -a ${LOG_FILE}
 
 git clone https://github.com/Yuhao-Fan/DockerManagementFlask.git
 cd $FLASK_APP_WS
 git fetch --all
-git checkout -b $DEMO_NAME origin/$DEMO_NAME
+# git checkout -b $DEMO_NAME origin/$DEMO_NAME
 
 pip install -r requirements.txt
 
