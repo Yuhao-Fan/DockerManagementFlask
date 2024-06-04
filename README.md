@@ -57,8 +57,8 @@ flask run --host=0.0.0.0 --port=30002
 docker run -p 5000:5000 flask-app
 
 python --version
-docker build -t ztgg-test-restful-demo-img:1.0 --build-arg=PYTHON_VERSION=3.11.9 .
+docker build -t ztgg-flask-img:1.0 --build-arg=PYTHON_VERSION=3.11.9 .
 
-docker run -it -P --rm --name=ztgg-test-restful-c -e FLASK_ENV=development -e FLASK_APP=entrypoint.py -e RUN_ENV=development -e ZTGG_DOMAIN=192.168.4.24 -e DB_PORT=55000 ztgg-test-restful-demo-img:1.0
+docker run -it -P --rm --name=ztgg-flask-c -e FLASK_ENV=development -e FLASK_APP=entrypoint.py -e RUN_ENV=development -e ZTGG_DOMAIN=192.168.4.24 -e DB_PORT=55000 ztgg-flask-img:1.0
 
 docker run -it -P --rm --name=ztgg-test-restful-c -e FLASK_ENV=development -e FLASK_APP=entrypoint.py -e RUN_ENV=development -e ZTGG_DOMAIN=192.168.4.24 -e DB_PORT=55000 ztgg-test-restful-demo-img:1.0

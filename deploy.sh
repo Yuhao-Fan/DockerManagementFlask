@@ -6,7 +6,7 @@ cd $PROJ_WS
 
 git --version | tee -a ${LOG_FILE}
 
-git clone https://yuhao-fan@github.com/Yuhao-Fan/ztgg1v1demo.git
+git clone https://github.com/Yuhao-Fan/DockerManagementFlask.git
 cd $FLASK_APP_WS
 git fetch --all
 git checkout -b $DEMO_NAME origin/$DEMO_NAME
